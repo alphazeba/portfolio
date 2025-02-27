@@ -1,42 +1,151 @@
+body {
+  position: relative;
+}
+
 #root {
-  max-width: 1280px;
+  margin: 0 0;
+  text-align: center;
+  --shadow-size: 1px;
+  --name-block-edge: 1em;
+  width: 100%;
+  --soft-color: #888;
+  --normal-color: white;
+  --bright-color: lightpink;
+  --transition-t: 300ms;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: darkslategray;
+  height: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.headerSpacer {
+  height: 4em
+}
+
+.homeButton {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+}
+
+.headerLogo {
+  height: 3em;
+  width: 3em;
+}
+
+.headerLogoText {
+  margin-top: -1.5em;
+  font-size: 2em;
+}
+
+.headerItem {
+  color: var(--soft-color);
+  font-size: 2.5em;
+  line-height: 0;
+  margin: 1em;
+  transition: color var(--transition-t);
+}
+
+.headerItem:hover {
+  color: var(--soft-color);
+}
+
+.headerItemActive {
+  color: var(--normal-color) !important;
+}
+
+.centerStage {
   margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 20em;
+  width: 20em;
+  display: inline-block;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter var(--transition-t);
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1em #ffffffaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tinyBacklit {
+  will-change: filter;
+  transition: filter var(--transition-t);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tinyBacklit:hover {
+  filter: drop-shadow(0 0 0.2rem #ffffffaa);
 }
 
-.card {
-  padding: 2em;
+h1 {
+  color: var(--bright-color);
+  text-shadow: calc(-1 * var(--shadow-size)) calc(-1 * var(--shadow-size)) 0 #000, var(--shadow-size) calc(-1 * var(--shadow-size)) 0 #000, calc(-1 * var(--shadow-size)) var(--shadow-size) 0 #000, var(--shadow-size) var(--shadow-size) 0 #000;
+}
+
+h2 {
+  text-shadow: calc(-1 * var(--shadow-size)) calc(-1 * var(--shadow-size)) 0 #000, var(--shadow-size) calc(-1 * var(--shadow-size)) 0 #000, calc(-1 * var(--shadow-size)) var(--shadow-size) 0 #000, var(--shadow-size) var(--shadow-size) 0 #000;
+}
+
+img {
+  border-radius: 1em;
+}
+
+.pic {
+  height: 10em;
+  margin: 0.5em;
+}
+
+.container {
+  position: relative;
+}
+
+.nameBlock {
+  pointer-events: none;
+  position: absolute;
+  left: var(--name-block-edge);
+  top: var(--name-block-edge);
+  right: var(--name-block-edge);
+  bottom: var(--name-block-edge);
+  animation: spin 20s linear infinite;
+  color: var(--bright-color);
+}
+
+.outlineText {
+  text-shadow: calc(-1 * var(--shadow-size)) calc(-1 * var(--shadow-size)) 0 #000, var(--shadow-size) calc(-1 * var(--shadow-size)) 0 #000, calc(-1 * var(--shadow-size)) var(--shadow-size) 0 #000, var(--shadow-size) var(--shadow-size) 0 #000;
+}
+
+@keyframes spin {
+  100% {transform: rotate(0deg);};
+  0% {transform: rotate(360deg);};
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--soft-color);
+}
+.boringContainer {
+  display: flex;
+  justify-content: center;
+}
+.boring {
+  max-width: 1200px;
+  text-align: left;
+  margin: 0 2em;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
 }
