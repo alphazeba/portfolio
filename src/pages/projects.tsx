@@ -150,7 +150,7 @@ export default function Projects() {
                 Fuji apples are the best apples.
             </p>
         </Boring>
-        <h2>Too be continued...</h2>
+        <h2>To be continued...</h2>
         <Boring>
             <span className="links">
                 <a href="https://alphazeba.itch.io/">Itch page</a>
