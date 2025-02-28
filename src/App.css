@@ -101,7 +101,7 @@ img {
 }
 
 .pic {
-  height: 10em;
+  height: 15em;
   margin: 0.5em;
 }
 
@@ -148,4 +148,12 @@ img {
 
 .floatLeft {
   float: left;
+}
+
+.links a {
+  margin-right: 1em;
+}
+
+a {
+  color: var(--bright-color)
 }
