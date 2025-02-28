@@ -21,16 +21,16 @@ export default function Home() {
         <text fill="#ffb6c1">
           <textPath 
             href="#circlePath"
-            textLength={Math.floor(Math.PI * 2 * r)}
             fontWeight="bold"
             fontSize="0.75em"
+
           >
             aron hommas
           </textPath>
           <textPath
             fontSize="0.5em"
             href="#circlePath"
-            startOffset="47%"
+            startOffset="45%"
           >
             backend software engineer
           </textPath>
