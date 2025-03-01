@@ -21,6 +21,26 @@ body {
 
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: darkslategray;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.footerSpacer {
+  height: 2em;
+}
+
+.footerContent {
+  margin-right: 1em;
+  color: rgb(59, 105, 105);
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -29,10 +49,12 @@ body {
   height: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .headerSpacer {
-  height: 4em
+  height: 6em
 }
 
 .homeButton {
@@ -57,6 +79,16 @@ body {
   line-height: 0;
   margin: 1em;
   transition: color var(--transition-t);
+}
+
+.headerButtonContainer {
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .headerItem {
+    font-size: 1.5em;
+  }
 }
 
 .headerItem:hover {
@@ -112,6 +144,18 @@ img {
   margin: 0.5em;
 }
 
+@media only screen and (max-width: 690px) {
+  .pic {
+    height: 10em;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .pic {
+    height: 7em;
+  }
+}
+
 .container {
   position: relative;
 }
@@ -163,4 +207,13 @@ img {
 
 a {
   color: var(--bright-color)
+}
+
+.prompter {
+  margin: 1em;
+}
+
+.prompterSpacer {
+  pointer-events: none;
+  user-select: none;
 }

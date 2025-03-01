@@ -1,4 +1,6 @@
 import Boring from "../bits/boring";
+import { ROUTE_PROJECT } from "../bits/header";
+import Prompter from "../bits/prompter";
 
 export default function Work() {
     return <>
@@ -54,5 +56,8 @@ export default function Work() {
                 This was a huge success.  We made flappy bird clones and had time enough to make more student led games. One student made a simple 2d minecraft clone. Very impressive.</p>
             <p>Pictured is one of many shirts DigiPEN provided to us teachers.  Evidentally college age gamers are not known for laundry.</p>
         </Boring>
+        <Prompter destination={ROUTE_PROJECT}>
+            see my personal projects
+        </Prompter>
     </>
 }

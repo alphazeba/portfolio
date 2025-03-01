@@ -1,5 +1,6 @@
 import {Link} from 'react-router'
 import logo from '/harverestWeb.svg'
+import { ROUTE_WORK } from '../bits/header';
 
 export default function Home() {
     const renderName = () => {
@@ -41,7 +42,7 @@ export default function Home() {
   
     return <>
       <div>
-        <Link to="/work" className='container logo'>
+        <Link to={ROUTE_WORK} className='container logo'>
           <img src={logo} className="logo"/>
           <div className="nameBlock outlineText">
               {renderName()}

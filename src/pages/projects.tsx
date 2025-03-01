@@ -1,4 +1,6 @@
 import Boring from "../bits/boring"
+import { ROUTE_ABOUT } from "../bits/header"
+import Prompter from "../bits/prompter"
 
 export default function Projects() {
     return <>
@@ -123,7 +125,7 @@ export default function Projects() {
                 The gunk meter goes up as the level gets more dirty and then goes down as the level is cleaned.
                 I could go a long ramble on my opinions concerning base data remaining uninterpretted, however, there is no abstract "dirt level" metric calculated.
                 Instead, I created a series of shaders which sum filled pixels on the full level dirt texture down to a single number.
-                So this "gunk level" is calculated by counting every pixel on screen every 3 frames without impacting the framerate.
+                So this "gunk level" is calculated by counting every pixel in the level every 3 frames without impacting the framerate.
             </p>
         </Boring>
         <h2>00Boyfriend</h2>
@@ -162,5 +164,8 @@ export default function Projects() {
                 I will write about some notable games below, but you can see my full list of released games on my itch page linked above
             </p>
         </Boring>
+        <Prompter destination={ROUTE_ABOUT}>
+            who is this aron
+        </Prompter>
     </>
 }
