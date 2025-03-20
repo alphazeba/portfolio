@@ -5,6 +5,34 @@ import Prompter from "../bits/prompter"
 export default function Projects() {
     return <>
         <h1>Projects</h1>
+        <h2>SSBM Controller Overlay Mod</h2>
+        <Boring>
+            <span className="links">
+                <a href="https://github.com/project-slippi/slippi-ssbm-asm/pull/132">Slippi pr</a>
+            </span>
+            <img className="pic floatLeft" src="/photo/controllerOverlay.png"/>
+            <p>
+                A Gecko Code that draws a controller overlay in Super Smash Bros Melee.
+                Especially powerful when used with Slippi match replays.
+                See precisely how your opponent styled on you.
+            </p>
+            <p>
+                I learned PowerPC assembly in order to build this.
+                We are at an interesting moment in PowerPC history.
+                We have phenomenal access and tooling for working with PowerPCs (<a href="https://dolphin-emu.org/">Dolphin</a>, <a href="https://github.com/aldelaro5/Dolphin-memory-engine">Dolphin Memory Engine</a>, <a href="https://wiibrew.org/wiki/DevkitPPC">devkitPPC</a>, <a href="https://github.com/JLaferri/gecko">gecko</a>); however, many classic documentation sources referenced in tutorials are being lost as sites are taken down.
+                Luckily, we still have access to IBMs mostly comparable AIX documentation. IBM's documentation exhibits documentation from the perspective of mastery which will tragically dissuade a number of would be learners.
+                Example: <a href="https://www.ibm.com/docs/en/aix/7.3?topic=processor-floating-point-move-instructions">Floating-point move instructions</a>.
+                Notice this page appears to document the existance of the "fmr" instruction but neglects to actually mention it, it is too basic.
+            </p>
+            <p>
+                Long story short, learning how to speak the language to make this mod was every bit the journey that making the mod itself was.
+                I've heard it said that programmers tend to like playing factorio, but the thought I had while organizing my data and instructions was that it felt a bit like playing factorio.
+                Maybe assembly's difficulty has been overblown, it is more arcane than difficult, people are missing fun by skipping assembly.
+            </p>
+            <p>
+                At time of writing, my PR has not been accepted into slippi, but I am optimistically looking forward to the day.
+            </p>
+        </Boring>
         <h2>Music Uploader</h2>
         <Boring>
             <span className="links">
@@ -156,12 +184,16 @@ export default function Projects() {
         <Boring>
             <span className="links">
                 <a href="https://alphazeba.itch.io/">Itch page</a>
+                <a href="https://github.com/alphazeba">Github</a>
             </span>
             <p>
                 My initial interest in programming came from making games using YoyoGames GameMaker in middleschool. I still use GameMaker in most of my game projects but have experimenting with Unity more frequently.
             </p>
             <p>
                 I will write about some notable games below, but you can see my full list of released games on my itch page linked above
+            </p>
+            <p>
+
             </p>
         </Boring>
         <Prompter destination={ROUTE_ABOUT}>

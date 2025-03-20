@@ -3,7 +3,7 @@ export default function Footer() {
         <div className="footerSpacer"/>
         <div className="footer">
             <div className="footerContent">
-                made by aron
+                site by aron
             </div>
         </div>
     </>
