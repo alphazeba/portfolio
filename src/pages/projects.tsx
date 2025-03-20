@@ -17,9 +17,9 @@ export default function Projects() {
                 See precisely how your opponent styled on you.
             </p>
             <p>
-                I learned PowerPC assembly in order to build this.
+                I learned PowerPC assembly to build this.
                 We are at an interesting moment in PowerPC history.
-                We have phenomenal access and tooling for working with PowerPCs (<a href="https://dolphin-emu.org/">Dolphin</a>, <a href="https://github.com/aldelaro5/Dolphin-memory-engine">Dolphin Memory Engine</a>, <a href="https://wiibrew.org/wiki/DevkitPPC">devkitPPC</a>, <a href="https://github.com/JLaferri/gecko">gecko</a>); however, many classic documentation sources referenced in tutorials are being lost as sites are taken down.
+                Phenomenal access and tooling for working with PowerPCs (<a href="https://dolphin-emu.org/">Dolphin</a>, <a href="https://github.com/aldelaro5/Dolphin-memory-engine">Dolphin Memory Engine</a>, <a href="https://wiibrew.org/wiki/DevkitPPC">devkitPPC</a>, <a href="https://github.com/JLaferri/gecko">gecko</a>); however, many classic documentation sources referenced in tutorials are being lost as sites are taken down.
                 Luckily, we still have access to IBMs mostly comparable AIX documentation. IBM's documentation exhibits documentation from the perspective of mastery which will tragically dissuade a number of would be learners.
                 Example: <a href="https://www.ibm.com/docs/en/aix/7.3?topic=processor-floating-point-move-instructions">Floating-point move instructions</a>.
                 Notice this page appears to document the existance of the "fmr" instruction but neglects to actually mention it, it is too basic.
@@ -175,7 +175,7 @@ export default function Projects() {
                 Our story team had in depth branching pathways and plot.
                 Essentially an entirely separate visual novel like experience playing out on the phone while the spy is running around and gunning down enemies.
                 But as happens in a jam, we ran out of time and had to make do.
-                Hours before submission deadline, I was cramming sufficient dialog into the system that randomly choosing dialog events did not repeat too often (in my sleep deprived state, i did not consider only selecting from unchosen events).
+                Hours before submission deadline, I was cramming sufficient dialog into the system that randomly choosing dialog events did not repeat too often and the story plot was compromised to simply affecting player health.
                 I have been told since that the phone girlfriend really just sounds like talking with me, so maybe a bit unintentionally personal bit of media.
                 Fuji apples are the best apples.
             </p>
@@ -187,13 +187,7 @@ export default function Projects() {
                 <a href="https://github.com/alphazeba">Github</a>
             </span>
             <p>
-                My initial interest in programming came from making games using YoyoGames GameMaker in middleschool. I still use GameMaker in most of my game projects but have experimenting with Unity more frequently.
-            </p>
-            <p>
-                I will write about some notable games below, but you can see my full list of released games on my itch page linked above
-            </p>
-            <p>
-
+                I have more projects and games than listed here, you can see my github and itch pages for more projects.
             </p>
         </Boring>
         <Prompter destination={ROUTE_ABOUT}>
