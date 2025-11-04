@@ -62,8 +62,8 @@ export default function Projects() {
         <Boring>
             <span className="links">
                 <a href="https://github.com/alphazeba/shobuLink">Code</a>
-                <a href="http://shobu.link">Website</a>
-                <a href="http://shobu.link/game/9eced310-1f6b-42cf-924c-97954918d9bc">Example game</a>
+                <a href="https://shobu.link">Website</a>
+                <a href="https://shobu.link/#/game/9eced310-1f6b-42cf-924c-97954918d9bc">Example game</a>
             </span>
             <img className="pic floatLeft" src="/photo/shobulink.png"/>
             <p>
@@ -83,12 +83,6 @@ export default function Projects() {
                 An exciting development is that Shobu.link was discovered by Abstrakta, an italian abstract games organization which hosts an international online multi-game competition each year.
                 They've asked if Shobu.link could host the Shobu segment this year, so Shobu.link is the official Shobu website for <a href="https://www.abstrakta.info/mochalunt-2025.html">Mochalunt 2025</a>!
                 If you click "Games & Results" button you can see my website noted in the doc.
-            </p>
-            <p>
-                You may ask yourself, "is this an http website in 2025"?
-                Yes, I was experimenting at the time with storing my static content in an S3 bucket (which at my usage scale is free) but AWS charges a fee for enabling https on the s3 bucket using CloudFront.
-                So basically, I'm cheap, maybe if i get more donations i will upgrade to https. Or find the time to host the static content elsewhere.
-                In the meantime, the "login" is just username and no password.
             </p>
         </Boring>
         <h2>NoteTab</h2>
